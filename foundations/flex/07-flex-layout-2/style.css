@@ -17,13 +17,71 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
   box-sizing: border-box;
 }
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 20px;
+  font-size: large;
+}
+
+.card {
+  width: 300px;
+  padding: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
